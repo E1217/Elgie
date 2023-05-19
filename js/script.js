@@ -42,7 +42,7 @@ document.addEventListener("click", (e) =>{
          window.scrollTo(0,0);
          document.body.classList.remove("hide-scrolling");
          navToggler.classList.remove("hide");
-         document.querySelector(". overlay").classList.remove("active");
+         document.querySelector(".overlay").classList.remove("active");
       },500);
    }
 })
@@ -78,7 +78,7 @@ document.querySelector(".pp-close").addEventListener("click", togglePortfolioPop
 
 //hide popup when clicking outside of it
 document.addEventListener("click", (e) =>{
-   if(e,target.classList.contains("pp-inner")){
+   if(e.target.classList.contains("pp-inner")){
       togglePortfolioPopup();
    }
 });
